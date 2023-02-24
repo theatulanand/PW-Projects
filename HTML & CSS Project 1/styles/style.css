@@ -1,0 +1,81 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/images/background-img.png");
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lists ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lists {
+  width: 25%;
+}
+
+.lists li {
+  list-style: none;
+}
+
+.lists li a {
+  color: #f2dc30;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.order-btn {
+  padding: 10px 35px;
+  background-color: #d94040;
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+main {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 900;
+  color: #f2dc30;
+  margin-top: 30px;
+}
+
+.menu-btn {
+  padding: 20px 35px;
+  background-color: #d94040;
+  color: white;
+  border: none;
+  font-size: 25px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  padding: 30px;
+}
