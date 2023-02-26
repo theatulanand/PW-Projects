@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #111827;
+  padding-bottom: 30px;
+}
+
+.hambrger {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 8vh;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+
+li:first-child {
+  padding: 5px 10px;
+  background: rgb(100, 100, 224);
+  border-radius: 15px;
+}
+
+li {
+  margin-right: 30px;
+  list-style: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+.intro {
+  margin-top: 30px;
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-line1 {
+  display: flex;
+}
+
+.intro-line1 h2 {
+  margin-left: 20px;
+}
+
+.intro-line2 h1 {
+  font-size: 50px;
+}
+
+.intro-line2 h2 {
+  font-size: 30px;
+  color: rgb(197, 197, 89);
+}
+
+.projects {
+  width: 70vw;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.projects-intro {
+  text-align: center;
+  font-size: 30px;
+}
+
+.horizontal-divider {
+  height: 10px;
+  width: 250px;
+  background-color: blue;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  margin: auto;
+}
+
+.project-items {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.project-items > div > img {
+  width: 80%;
+}
+
+.contactme {
+  width: 70vw;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.contactme-intro {
+  text-align: center;
+  font-size: 30px;
+}
+
+.socials {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.socials img {
+  width: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .hambrger {
+    display: block;
+  }
+
+  ul {
+    display: none;
+  }
+
+  nav {
+    justify-content: flex-start;
+    padding-left: 20px;
+    transition: 1750ms;
+  }
+
+  .intro {
+    margin-top: 30px;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .intro-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-line2 h1 {
+    font-size: 40px;
+  }
+
+  .intro-img img {
+    width: 300px;
+  }
+
+  .project-items {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+  }
+}
