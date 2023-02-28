@@ -1,0 +1,426 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  background: #0f0f10;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  margin: 0 15vw;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  padding: 30px 0;
+  width: 100%;
+}
+
+/* Styling NAvigation */
+
+nav,
+.nav-right,
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 40px;
+}
+
+nav ul li a {
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+nav button {
+  background: #1e1e21;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 10px 40px;
+  font-weight: 500;
+}
+
+nav button:hover {
+  cursor: pointer;
+  background: black;
+}
+
+/* Styling Main */
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+.headphone-img img {
+  width: 230px;
+  position: relative;
+  top: -250px;
+  left: 70px;
+}
+
+.main-right {
+  margin-left: 150px;
+}
+
+.onEar-img {
+  margin-left: 50px;
+  width: 350px;
+}
+
+.main-right h1 {
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.main-right h3 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.main-right p {
+  width: 65%;
+  font-size: 12px;
+  font-weight: 300;
+  color: #bdc0c2;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.shopping-bag-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #1e1e21;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.shopping-bag-btn:hover {
+  background-color: black;
+}
+
+.shopping-bag-btn img {
+  width: 15px;
+  background-color: transparent;
+}
+
+.shopping-bag-btn p {
+  margin-bottom: 0;
+  color: white;
+  background-color: transparent;
+}
+
+.shopping-bag-btn span {
+  background-color: transparent;
+}
+
+/* Styling Social Section */
+
+.social {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  position: relative;
+  top: -50px;
+}
+
+.social img {
+  scale: 0.8;
+}
+
+/* Styling Specs section */
+
+.specs {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.specs-logo {
+  scale: 0.8;
+}
+
+.specs-main {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.specs-left p {
+  font-size: 12px;
+}
+
+.specs-left p:last-child {
+  font-size: 10px;
+  color: #bdc0c2;
+}
+
+.specs-left div {
+  margin-bottom: 20px;
+}
+
+.specs-left div:last-child,
+.specs-left div:first-child {
+  margin-left: 30px;
+}
+
+.specs-right {
+  scale: 0.8;
+}
+
+/* Styling Case Section */
+
+.case {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.case-main {
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+  align-items: center;
+}
+
+.case-logo img,
+.case-left img {
+  scale: 0.8;
+}
+
+.case-right > p {
+  color: #bdc0c2;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.moreInfo-btn {
+  width: fit-content;
+  background: #1e1e21;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.moreInfo-btn img,
+.moreInfo-btn p {
+  background: transparent;
+}
+
+/* Styling banner */
+.banner {
+  width: 70vw;
+  height: 50vh;
+  border-radius: 20px;
+  background-color: #181a1b;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px;
+}
+
+.banner-right {
+  background-color: transparent;
+}
+
+.banner-left h3,
+.banner-left p {
+  background-color: transparent;
+}
+
+.banner-left > p {
+  color: #bdc0c2;
+  font-size: 12px;
+}
+
+.buynow-btn {
+  width: fit-content;
+  background: black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+.banner-left {
+  background-color: transparent;
+}
+
+.banner-right img {
+  scale: 0.8;
+  background-color: transparent;
+}
+
+/* Styling Products Section */
+
+.product-section {
+  width: 45vw;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.products-logo {
+  text-align: center;
+}
+
+.products-logo img {
+  scale: 0.6;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.product-card {
+  width: 150px;
+  height: 150px;
+  background-color: #181a1b;
+  margin-top: 80px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.product-card img {
+  background-color: transparent;
+  width: 90px;
+  position: relative;
+  top: -40%;
+}
+
+.product-card > div {
+  display: flex;
+  position: relative;
+  margin-top: -40%;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.product-card div {
+  background-color: transparent;
+}
+
+.product-card > div p:last-child {
+  color: #bdc0c2;
+  font-size: 14px;
+  margin-bottom: 15px;
+  background-color: transparent;
+}
+
+.product-card > div p:first-child {
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.product-card > div > div img {
+  width: 95%;
+  cursor: pointer;
+}
+
+.product-card > div > div:last-child {
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+  padding-bottom: 0px;
+}
+
+/* Styling footer part */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #bdc0c2;
+  margin-bottom: 10px;
+}
+
+.footer h3 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.subscribe-btn p {
+  color: white;
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+.subscribe-btn img {
+  background-color: transparent;
+}
+
+.subscribe-section {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: #181a1b;
+  border-radius: 10px;
+}
+
+.subscribe-section input {
+  border: none;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.subscribe-btn {
+  display: flex;
+  gap: 20px;
+  background-color: transparent;
+  background-color: #0f0f10;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
